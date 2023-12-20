@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@mixin mobile {
+    @media (max-width: $moblie-value) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $tablet-value) {
+        @content;
+    }
+}
+
+$main-color: #606;
+$secondary-color: #969;
+$accent-color: #f69;
+$accent-secondary-color: #ff8fb4;

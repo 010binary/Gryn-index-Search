@@ -1,0 +1,120 @@
+@import './reset';
+
+body {
+    background-color: rgb(233, 233, 233);
+
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5px 0px;
+        border-bottom: 1px solid;
+
+        div {
+
+            font-size: 3vmin;
+            height: 8vh;
+
+            h1 {
+                text-transform: capitalize;
+                color: $main-color;
+                font-weight: 700;
+            }
+        }
+
+        svg {
+            width: 20vw;
+            height: 8vh;
+        }
+    }
+
+    main {
+        margin-top: 20px;
+
+        form {
+            input {
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+                font-size: 1.2rem;
+                padding: 10px 20px;
+                text-transform: capitalize;
+                border: 2px solid $secondary-color;
+                color: $main-color;
+            }
+
+            .selection,
+            .submit {
+                text-align: center;
+                margin: 0 auto;
+                width: fit-content;
+                margin-top: 10px;
+            }
+
+            .selection {
+                display: flex;
+                flex-direction: row;
+
+                select+select {
+                    margin-left: 7px;
+                }
+
+                select {
+                    padding: 10px 15px;
+                    text-transform: uppercase;
+                    border: 2px solid $secondary-color;
+                    background-color: inherit;
+                    color: $main-color;
+
+                }
+            }
+
+            button {
+                padding: 7px 30px;
+                border-radius: 20px;
+                text-transform: uppercase;
+                border: 2px solid $secondary-color;
+                color: $main-color;
+                background-color: inherit;
+                letter-spacing: 1px;
+                font-size: 1.2rem;
+
+
+                &:hover,
+                &:active {
+                    background-color: $main-color;
+                    color: #fff;
+                    transition: 1000ms;
+                }
+            }
+        }
+
+        #content {
+            text-align: center;
+            margin: 0 auto;
+            width: fit-content;
+            margin-top: 20px;
+
+            // overflow-x: scroll;
+            // border: 1px solid black;
+            .Result {
+                border-collapse: collapse;
+                margin: 0 5px;
+
+                th,
+                td {
+                    border: 2px solid $secondary-color;
+                    padding: 10px 10px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        color: $main-color;
+        display: none;
+    }
+}
